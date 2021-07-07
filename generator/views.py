@@ -20,7 +20,6 @@ def password(request):
         characters.extend(list('+`@#$~^&*{}°^¨;–><'))
     if request.GET.get('numbers'):
         characters.extend(list('1234567890'))
-
     for x in range(length):
         thepassword += random.choice(characters)
 
